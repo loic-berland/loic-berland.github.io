@@ -1,0 +1,153 @@
+body {
+    background: #141414;
+    background-image: url(/img/background.png);
+    color: #ddd;
+    font-family: Ubuntu;
+    font-size: 16pt;
+}
+
+div.header {
+    position: relative;
+    width: 75%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: left;
+    font-size: 2.5vw;
+    margin: 0 auto;
+    margin-top: .4em;
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+div.header span {
+    text-decoration: none;
+}
+
+div.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.menu a {
+    display: block;
+    font-size: 1.5vw;
+}
+
+div.headline {
+    margin: 0 auto;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+    width: 90%;
+    font-size: 1.6vw;
+    font-weight: bold;
+    line-height: 36pt;
+    text-align: center;
+}
+
+img.headpic {
+    vertical-align: top;
+    height: 90%;
+    margin-right: 2rem;
+    transform: rotate(-20deg);
+}
+
+.main {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.row {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    width: 32.5%;
+    height: 15vw;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1.5vh;
+    border: 1px solid black;
+    box-shadow: 0 0 15px 5px #0006;
+}
+
+.box:hover>.overlay {
+    visibility: visible;
+}
+
+.overlay {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0006;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+p {
+    margin: auto;
+    text-align: center;
+}
+
+p.sold {
+    color: red;
+}
+
+div.main img {
+    width: 100%;
+}
+
+a {
+    color: #ddd;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    div.header {
+        font-size: 42pt;
+    }
+
+    div.menu {
+        display: none;
+    }
+
+    div.headline {
+        font-size: 28pt;
+    }
+
+    div.main {
+        width: 95%;
+    }
+
+    div.box {
+        height: 60vw;
+        width: 100%;
+    }
+
+    .overlay {
+        font-size: 80pt;
+    }
+}
