@@ -52,9 +52,9 @@ div.headline {
 
 img.headpic {
     vertical-align: top;
-    height: 90%;
-    margin-right: 2rem;
-    transform: rotate(-20deg);
+    height: 100%;
+    /* margin-right: 2rem;
+    transform: rotate(-20deg);*/
 }
 
 .main {
